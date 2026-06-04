@@ -36,11 +36,11 @@ sudo ./britelin <value_to_add>
 Example:
 
 ```bash
-# Increase brightness by 10
-sudo ./britelin 10
+# Increase brightness by 1
+sudo ./britelin 1
 
-# Decrease brightness by 5
-sudo ./britelin -5
+# Decrease brightness by 1
+sudo ./britelin -1
 ```
 
 ### Note:
@@ -67,11 +67,11 @@ sudo mv britelin /usr/local/bin
 2. Add the following lines to the configuration file:
 
 ```bash
-bindsym XF86MonBrightnessDown exec britelin -10
-bindsym XF86MonBrightnessUp exec britelin 10
+bindsym XF86MonBrightnessDown exec britelin -1
+bindsym XF86MonBrightnessUp exec britelin 1
 ```
 
-These lines bind the `XF86MonBrightnessDown` and `XF86MonBrightnessUp` keys (typically used for brightness adjustment on keyboards) to execute the `britelin` program with the specified brightness adjustments (`-10` for decrease, `10` for increase).
+These lines bind the `XF86MonBrightnessDown` and `XF86MonBrightnessUp` keys (typically used for brightness adjustment on keyboards) to execute the `britelin` program with the specified brightness adjustments (`-1` for decrease, `1` for increase).
 
 #### Step 3: Reload i3wm Configuration
 
@@ -91,7 +91,7 @@ For example:
 #### Notes:
 
 - Ensure the `britelin` program is in the system's path (`/usr/local/bin`) for i3wm to execute it correctly.
-- Adjust the `-10` and `10` values in the i3wm configuration to change the brightness adjustment step size according to your preference.
+- Adjust the `-1` and `1` values in the i3wm configuration to change the brightness adjustment step size according to your preference.
 
 
 ## Contributing
