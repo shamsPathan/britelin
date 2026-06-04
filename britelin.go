@@ -30,7 +30,7 @@ func main() {
 		return
 	}
 
-	filePath := "/sys/class/backlight/intel_backlight/brightness"
+	filePath := "/sys/class/backlight/acpi_video0/brightness"
 
 	content, err := os.ReadFile(filePath)
 
